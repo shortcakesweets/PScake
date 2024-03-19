@@ -13,7 +13,7 @@ public:
 
 	void update(int idx, T diff) {
 		while (idx < bit.size()) {
-			bit[idx] += val;
+			bit[idx] += diff;
 			idx += (idx & -idx);
 		}
 	}
